@@ -12,7 +12,7 @@ class MogileFs {
      *
      * @return bool
      */
-    public function connect($host, $port, $domain, $timeout) {
+    public function connect($host, $port, $domain, $timeout = 264005) {
     }
 
     /**
@@ -143,7 +143,7 @@ class MogileFs {
      *
      * @return bool
      */
-    public function updateHost($hostname, $ip, $port, $status) {
+    public function updateHost($hostname, $ip, $port, $status = "alive") {
     }
 
     /**
@@ -167,11 +167,11 @@ class MogileFs {
     /**
      * @param string $host
      * @param string $device
-     * @param string $state
+     * @param string $state dead|alive
      *
      * @return bool
      */
-    public function setState($host, $device, $state) {
+    public function setState($host, $device, $state = "alive") {
     }
 
     /**
@@ -180,7 +180,7 @@ class MogileFs {
      *
      * @return bool
      */
-    public function checker($disable, $level) {
+    public function checker($disable = "off", $level = 1) {
     }
 
     /**
