@@ -298,3 +298,7 @@ class MogileFs {
 class MogileFsException extends \Exception {
 
 }
+
+class MogileFsNotFoundException extends \Exception {
+
+}
