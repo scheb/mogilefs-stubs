@@ -200,9 +200,13 @@ class MogileFs {
     /**
      * Get MogileFs file keys
      *
+     * string|null $prefix
+     * string|null $after
+     * int $limit
+     *
      * @return array
      */
-    public function listKeys() {
+    public function listKeys($prefix = null, $after = null, $limit = 1000) {
     }
 
     /**
